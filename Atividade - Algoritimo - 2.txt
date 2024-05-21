@@ -1,0 +1,54 @@
+programa
+{
+    
+    inteiro vetor[10], i, soma
+    real media
+
+    
+    funcao inicio()
+    {
+        
+        soma = 0
+
+        
+        para (i = 0; i < 10; i++)
+        {
+            escreva("Digite o número para a posição ", i, ": ")
+            leia(vetor[i])
+        }
+
+        s
+        escreva("Elementos nos índices ímpares: ")
+        para (i = 1; i < 10; i = i + 2)
+        {
+            escreva(vetor[i], " ")
+        }
+        escreval() // Nova linha
+
+        
+        escreva("Elementos pares: ")
+        para (i = 0; i < 10; i++)
+        {
+            se (vetor[i] % 2 == 0)
+            {
+                escreva(vetor[i], " ")
+            }
+        }
+        escreval() // Nova linha
+
+        
+        para (i = 0; i < 10; i++)
+        {
+            soma = soma + vetor[i]
+        }
+
+        
+        media = soma / 10.0
+
+        
+        escreval("Soma: ", soma)
+
+        
+        escreval("Média: ", media)
+    }
+}
